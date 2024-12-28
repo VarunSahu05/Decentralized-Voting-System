@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+  <title>Voting System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="mb-0">
+    <div class="logo">
+      <img src="images/wellogo.jpg" alt="Profile Picture" id="profile-pic">
+    </div>
+    <button id="connectButton">Connect Wallet</button>
+    <p id="walletStatus">Please connect your wallet.</p>
+  </nav>
+  <main class="cc mt-0">
+    <div>
+      <h1 class="main-head mt-2">Decentralized Voting System</h1>
+    </div>
+  <section id="Registration" class="content">
+    <h1>Voter Registration</h1>
+    <form id="registrationForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" maxlength="20" required>
+      <label for="voterId">Voter ID (1-999):</label>
+      <input type="number" id="voterId" min="1" max="999" required>
+      <button type="submit" id="registerButton" disabled>Register</button>
+    </form>
+    <p id="message"></p>
+
+    <button id="nextButton" disabled>Go to Vote Section</button>
+</section>
+
+<section id="vote"class="content">
+    <h1>Vote for a Candidate</h1>
+    <form id="voteForm">
+      <label for="candidate">Candidate List:</label>
+      <select id="candidate">
+        <option value="0">BJP</option>
+        <option value="1">Congress</option>
+        <option value="2">AAP</option>
+        <option value="3">NOTA</option>
+      </select>
+      <button type="submit" id="voteButton">Vote</button>
+    </form>
+    <p id="voteMessage"></p>
+    <button id="toResultPage">Check Results</button>
+</section>
+
+<section class="content">
+    <h1>Voting Results</h1>
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Candidate Name</th>
+          <th>Candidate ID</th>
+          <th>Vote Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic rows will be added here -->
+      </tbody>
+    </table>
+</section>
+</main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
+

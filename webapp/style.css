@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  h1, h2 {
+    text-align: center;
+    color: #444;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  nav .logo img{
+    font-size: 24px;
+    font-weight: bold;
+    width: 120px;
+    margin-right: 10px;
+  }
+
+  nav button {
+    padding: 8px 15px;
+    border: none;
+    background-color: rgb(24, 23, 23);
+    color: #e9ece9;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav button:hover {
+    background-color: #e7e3f0;
+    color: black
+  }
+
+  .content {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgb(251, 251, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+  }
+
+  label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  input, select, button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #051408;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+  }
+
+  button {
+    background-color: #42cff5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  p {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+  }
+
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+
+  table thead {
+    background-color: #170570;
+    color: white;
+  }
+
+  table th, table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  table tbody tr:hover {
+    background-color: #e8f5e9;
+  }
+
+  .cc {
+    background-image: url('images/back.jpeg');
+    background-size: cover;
+    padding: 10px;
+  }
+  .main-head{
+    color: white;
+  }
